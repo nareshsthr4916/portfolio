@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naresh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +20,7 @@ p{
 .container{
     max-width: 1180px;
     margin-inline: auto;
-    padding-inline: 15px;
+    padding-inline: 10px;
 }
 .flex{
     display: flex;
@@ -40,6 +31,9 @@ nav{
     padding-block: 10px ;
     width: 100%;
     /* margin-bottom: 5%; */
+}
+.img-sec img{
+    width: 400px;
 }
 .navbar{
     justify-content: space-between;
@@ -131,6 +125,35 @@ header h2{
 h3{
     color: white;
 }
+.image{
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.img-card{
+    width: 32%;
+    height: 350px;
+    border: 2px solid rgb(24, 24, 34);
+   border-radius: 12px;
+    background: linear-gradient(to right, rgb(11, 11, 14),rgb(19, 19, 24));
+}
+.img-card img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 12px;
+}
+.sec-2{
+    margin-top: 8%;
+}
+.sec-2 h2{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
 
 @media  screen and (max-width:960px) {
     .left-sec{
@@ -144,8 +167,11 @@ h3{
     .service-card{
         width: 48%;
     }
+    .img-card{
+        width: 48%;
+    }
     .nav-links{
-        position: fixed;
+        position: absolute;
         top: -100%;
         flex-direction: column;
         text-align: center;
@@ -154,6 +180,7 @@ h3{
         padding-block: 20px;
         transition: 0.3s ease-in-out;
     }
+    
     .nav-links.active{
         top: 70px;
     }
@@ -172,86 +199,8 @@ h3{
     .service-card{
         width: 100%;
     }
+    .img-card{
+        width: 100%;
+    }
     
 }
-
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="container">
-            <div class="navbar flex">
-                <h1>Naresh-Dev</h1>
-                <div class="nav-links flex" id="nav-links">
-                    <a href="">About</a>
-                    <a href="">Service</a>
-                    <a href="">Work</a>
-                    <a href="">Contact</a>
-                </div>
-                <button>Let's Chat</button>
-                <i class="fa-solid fa-bars" style="color: #ffffff;" id="nav-toggle"></i>
-            </div>
-        </div>
-    </nav>
-    <hr>
-    <main>
-        <div class="container main flex">
-            <div class="left-sec flex">
-                <p class="pa">Full Stack Web Developer</p>
-                <h1>Hey I,m Naresh</h1>
-                <p>A Full Stack Web Developer with 5 Years of Experience in Frontend. I have my own Web Developing Company in USA with 50+ Team Members. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor natus iusto magnam dolorem ad facere quas maiores obcaecati perspiciatis nulla? </p>
-
-            </div>
-            <div class="img-sec">
-                <img src="https://pngimg.com/uploads/hacker/hacker_PNG3.png" alt="">
-
-            </div>
-        </div>
-    </main>
-    <header>
-        <div class="container">
-            <h2>What I DO</h2>
-            <div class="service-sec flex">
-                <div class="service-card flex">
-                    <i class="fa-solid fa-chart-simple" style="color: #707070;"></i>
-                    <h3>User Research and Analysis</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-                <div class="service-card flex">
-                    <i class="fa-solid fa-gear" style="color: #707070;"></i>
-                    <h3>Information Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-                <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
-                    <h3>Information Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-                <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
-                    <h3>Information Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-                <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
-                    <h3>Information Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-                <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
-                    <h3>Information Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <script>
-        const navToggle= document.getElementById('nav-toggle');
-        const navLinks= document.getElementById('nav-links');
-
-        navToggle.addEventListener('click',()=>{
-            navLinks.classList.toggle('active')
-        })
-    </script>
-</body>
-</html>
