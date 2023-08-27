@@ -9,218 +9,254 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: rgb(17, 17, 19);
-            font-family: poppins;
-        }
-        a{
-            text-decoration: none;
-            font-size: .9rem;
-            padding: 8px 12px;
-        }
-        p{
-            color: rgb(185,185,185);
-            font-size: 1rem;
-        }
-        .container{
-            max-width: 1180px;
-            margin-inline: auto;
-            padding-inline: 10px;
-        }
-        .flex{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav{
-            padding-block: 10px ;
-            width: 100%;
-            /* margin-bottom: 5%; */
-        }
-        .img-sec img{
-            width: 400px;
-        }
-        .navbar{
-            justify-content: space-between;
-        }
-        .navbar h1{
-            font-size: 1.7rem;
-            color: rgb(185, 185, 185);
-        }
-        .navbar a{
-            color: rgb(185,185,185);
-        }
-        .nav-links{
-            gap: 40px;
-        }
-        .navbar button{
-            padding: 10px 20px;
-            background-color: rgb(47, 47, 51);
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-family: poppins;
-            cursor: pointer;
-        }
-        .nav-links a:hover{
-          color: rgb(158, 158, 158);
-        }
-        .main{
-            box-shadow: 0px 0px 5px rgb(25, 25, 32);
-            justify-content: space-between;
-            border-radius: 10px;
-            margin-block: 8%;
-        
-        }
-        .left-sec{
-            flex-direction: column;
-            align-items: flex-start;
-            width: 46%;
-            padding-top: 15px;
-            padding-bottom: 15%;
-            gap: 40px;
-        }
-        .navbar i{
-            font-size: 2rem;
-        }
-        .navbar i{
-            display: none;
-        }
-        .pa{
-            border-bottom: 1px solid white ;
-        }
-        .left-sec h1{
-            color: white;
-            font-size: 2.5rem;
-        }
-        .img-sec img{
-            width: 500px;
-        }
-        header h2{
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 5%;
-        }
-        .service-sec{
-            width: 100%;
-            justify-content: space-between;
-            row-gap: 30px;
-            flex-wrap: wrap;
-        }
-        .service-card{
-            width: 32%;
-            height: 300px;
-            border: 2px solid rgb(24, 24, 34);
-           border-radius: 8px;
-           background: linear-gradient(to right, rgb(11, 11, 14),rgb(19, 19, 24));
-           padding: 15px;
-           flex-direction: column;
-           align-items: flex-start;
-           justify-content: center;
-           row-gap: 10px;
-        }
-        .service-card i{
-            font-size: 2rem;
-            margin-bottom: 10%;
-        }
-        .service-card p{
-            font-size: .9rem !important;
-        }
-        h3{
-            color: white;
-        }
-        .image{
-            width: 100%;
-            justify-content: space-between;
-            row-gap: 20px;
-        }
-        .img-card{
-            width: 32%;
-            height: 350px;
-            border: 2px solid rgb(24, 24, 34);
-           border-radius: 12px;
-            background: linear-gradient(to right, rgb(11, 11, 14),rgb(19, 19, 24));
-        }
-        .img-card img{
-            width: 100%;
-            height: 250px;
-            background-size: cover;
-            border-radius: 12px;
-        }
-        .sec-2{
-            margin-top: 8%;
-        }
-        .sec-2 h2{
-            color: white;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 3%;
-        }
-        
-        
-        
-        @media  screen and (max-width:960px) {
-            .left-sec{
-                width: 100%;
-            }
-            .img-sec{
-               margin-inline: auto;
-            }
-        }
-        @media screen and (max-width: 770px) {
-            .service-card{
-                width: 48%;
-            }
-            .img-card{
-                width: 48%;
-            }
-            .nav-links{
-                position: absolute;
-                top: -100%;
-                flex-direction: column;
-                text-align: center;
-                background-color:rgb(17, 17, 19);
-                width: 100%;
-                padding-block: 20px;
-                transition: 0.3s ease-in-out;
-            }
-            
-            .nav-links.active{
-                top: 70px;
-            }
-            .navbar i{
-                display: initial;
-            }
-            .navbar button{
-                display: none;
-            }
-            
-        }
-        @media screen and (max-width: 522px) {
-            .img-sec img{
-                width: 300px;
-            }
-            .service-card{
-                width: 100%;
-            }
-            .img-card{
-                width: 100%;
-            }
-            
-        }
-    </style>
+    <link rel="shortcut icon"
+        href="https://st2.depositphotos.com/2723391/10875/v/450/depositphotos_108752618-stock-illustration-capital-letter-n.jpg"
+        type="image/x-icon">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 8px 12px;
+}
+p{
+    color: var(--paragraph-color);
+    font-size: 1rem;
+}
+:root{
+    --background-color:  rgb(17, 17, 19);
+    --gradient-color: black;
+    --paragraph-color:  rgb(185,185,185);
+    --white-color : white;
+}
+.dark{
+    --background-color:  rgb(236, 236, 236);
+    --paragraph-color:  rgb(36, 36, 36);
+    --gradient-color: rgb(192, 192, 192);
+    --white-color : rgb(0, 0, 0);
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav{
+    padding-block: 10px ;
+    width: 100%;
+    /* margin-bottom: 5%; */
+}
+.img-sec img{
+    width: 400px;
+}
+.navbar{
+    justify-content: space-between;
+}
+.navbar h1{
+    font-size: 1.7rem;
+    color: var(--white-color);
+}
+.navbar a{
+    color: var(--paragraph-color);
+}
+.nav-links{
+    gap: 40px;
+}
+.navbar button{
+    padding: 10px 20px;
+    background-color: rgb(47, 47, 51);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: poppins;
+    cursor: pointer;
+}
+.nav-links a:hover{
+  color: var(--paragraph-color);
+}
+.main{
+    box-shadow: 0px 0px 5px rgb(25, 25, 32);
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-block: 8%;
 
-<body>
+}
+.left-sec{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 46%;
+    padding-top: 15px;
+    padding-bottom: 15%;
+    gap: 40px;
+}
+.navbar i{
+    font-size: 2rem;
+    color: var(--white-color);
+}
+.navbar i{
+    display: none;
+}
+.service-card i{
+    color: var(--paragraph-color);
+}
+#darkmodebutton{
+    font-size: 2rem;
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    cursor: pointer;
+}
+.pa{
+    border-bottom: 1px solid var(--white-color) ;
+}
+.left-sec h1{
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
+.img-sec img{
+    width: 500px;
+}
+header h2{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+.service-sec{
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+main i{
+    color: var(--white-color);
+}
+.service-card{
+    width: 32%;
+    height: 300px;
+    box-shadow: 0px 0px 5px rgb(25, 25, 32);
+   border-radius: 8px;
+   background: linear-gradient(to right, var(--background-color),var(--gradient-color));
+   padding: 15px;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   row-gap: 10px;
+}
+.service-card i{
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+.service-card p{
+    font-size: .9rem !important;
+}
+h3{
+    color: var(--white-color);
+}
+.image{
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.img-card{
+    width: 32%;
+    height: 350px;
+    box-shadow: 0px 0px 5px rgb(25, 25, 32);
+   border-radius: 12px;
+    background: linear-gradient(to right, var(--background-color),var(--gradient-color));
+}
+.img-card h3{
+    margin-left: 10px;
+}
+.img-card p{
+    margin-left: 10px;
+}
+.img-card img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 12px;
+}
+.sec-2{
+    margin-top: 8%;
+}
+.sec-2 h2{
+    color: var(--white-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 30px;
+}
+
+
+
+@media  screen and (max-width:960px) {
+    .left-sec{
+        width: 100%;
+    }
+    .img-sec{
+       margin-inline: auto;
+    }
+}
+@media screen and (max-width: 770px) {
+    .service-card{
+        width: 48%;
+    }
+    .img-card{
+        width: 48%;
+    }
+    .nav-links{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color:rgb(17, 17, 19);
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-links.active{
+        top: 70px;
+    }
+    .navbar i{
+        display: initial;
+    }
+    .navbar button{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 522px) {
+    .img-sec img{
+        width: 300px;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .img-card{
+        width: 100%;
+    }
+    
+}
+
+</style>
+
+<body id="body">
     <nav>
         <div class="container">
             <div class="navbar flex">
@@ -232,12 +268,13 @@
                     <a href="">Contact</a>
                 </div>
                 <button>Let's Chat</button>
-                <i class="fa-solid fa-bars" style="color: #ffffff;" id="nav-toggle"></i>
+                <i class="fa-solid fa-bars" id="nav-toggle"></i>
             </div>
         </div>
     </nav>
     <hr>
     <main>
+        <i class="fa-solid fa-toggle-on" id="darkmodebutton"></i>
         <div class="container main flex">
             <div class="left-sec flex">
                 <p class="pa">Full Stack Web Developer</p>
@@ -258,37 +295,37 @@
             <h2>What I DO</h2>
             <div class="service-sec flex">
                 <div class="service-card flex">
-                    <i class="fa-solid fa-chart-simple" style="color: #707070;"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
                     <h3>User Research and Analysis</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
                 </div>
                 <div class="service-card flex">
-                    <i class="fa-solid fa-gear" style="color: #707070;"></i>
+                    <i class="fa-solid fa-gear"></i>
                     <h3>Information Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
                 </div>
                 <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
+                    <i class="fa-solid fa-database"></i>
                     <h3>Information Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
                 </div>
                 <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
+                    <i class="fa-solid fa-database"></i>
                     <h3>Information Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
                 </div>
                 <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
+                    <i class="fa-solid fa-database"></i>
                     <h3>Information Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
                 </div>
                 <div class="service-card flex">
-                    <i class="fa-solid fa-database" style="color: #707070;"></i>
+                    <i class="fa-solid fa-database"></i>
                     <h3>Information Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis tempora? Commodi
                         culpa ducimus fuga voluptatum obcaecati. Vel, aliquid quod.</p>
@@ -302,29 +339,41 @@
             <h2>Shopping With Us</h2>
             <div class="image flex">
                 <div class="img-card">
-                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg" alt="">
+                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg"
+                        alt="">
                     <h3>Laptop Service</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="img-card">
-                    <img src="https://securityintelligence.com/wp-content/uploads/2019/04/external_mobile-security-versus-desktop-and-laptop-security-is-there-even-a-difference-anymore.jpg" alt="">
+                    <img src="https://securityintelligence.com/wp-content/uploads/2019/04/external_mobile-security-versus-desktop-and-laptop-security-is-there-even-a-difference-anymore.jpg"
+                        alt="">
                     <h3>Laptop Service</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="img-card">
-                    <img src="https://s3.amazonaws.com/cms.ipressroom.com/219/files/20230/63b453d8b3aed33c5b505dff_geforce-rtx-40-series-laptops/geforce-rtx-40-series-laptops_a83bb877-4841-4715-9517-277f8dfd57c2-prv.jpg" alt="">
-                    <h3>Laptop Service</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img src="https://s3.amazonaws.com/cms.ipressroom.com/219/files/20230/63b453d8b3aed33c5b505dff_geforce-rtx-40-series-laptops/geforce-rtx-40-series-laptops_a83bb877-4841-4715-9517-277f8dfd57c2-prv.jpg"
+                        alt="">
+                        <h3>Laptop Service</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
         </div>
     </section>
+
+
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navLinks = document.getElementById('nav-links');
 
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active')
+        })
+
+        const darkToggle=document.getElementById('darkmodebutton');
+        const Body=document.getElementById('body');
+
+        darkToggle.addEventListener('click',()=>{
+            Body.classList.toggle('dark');
         })
     </script>
 </body>
